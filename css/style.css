@@ -1,0 +1,160 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+
+/* Globals  */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*==================================*/
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background-color: #020631;
+    background-position: center;
+    background-size: cover;
+}
+
+h1
+{
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    color: whitesmoke;
+    font-family: 'Salsa', cursive;
+}
+
+
+.todo-container {
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#add-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#todoinput {
+    padding: 5px 10px;
+    width: 75%;
+    border-radius: 5px;
+}
+
+#todo-btn {
+    width: 25%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#todo-btn:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.boxesContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    height: 300px;
+}
+
+.box h3 
+{
+    color: whitesmoke;
+    font-family: 'Salsa', cursive;
+}
+
+.task {
+    background-color: darkslategray;
+    color: white;
+
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid black;
+    cursor: move;
+    
+}
+/*
+.box p::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(../img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+
+}
+*/
+
+.task.is-dragging {
+    background-color: orangered;
+    color: white;
+}
+
+.footer
+{
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    color: whitesmoke;
+
+}
+
+.footer h4 {
+    color: whitesmoke;
+    font-family: 'Salsa', cursive;
+}
+
+span {
+    color: #0d6efd;
+}
+
+.task button
+{
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
+    float: right;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.task button:hover
+{
+    background-color: orangered;
+    color: white;
+}
+
+
+
